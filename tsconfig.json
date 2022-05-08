@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+     "paths": {
+      "react/*": ["packages/react/src/*"],
+      "react-dom/*": ["packages/react-dom/src/*"],
+      "shared/*": ["packages/shared/src/*"],
+    },
+  }
+}

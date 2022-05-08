@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`createElement > has props 1`] = `
+<div
+  className="m-10"
+  id="divEl"
+/>
+`;
+
+exports[`createElement > should create a ReactElement 1`] = `<div />`;
