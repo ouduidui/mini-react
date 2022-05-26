@@ -8,6 +8,7 @@ export default defineConfig({
       'react/': `${path.resolve(__dirname, 'packages/react/src')}/`,
       'react-dom/': `${path.resolve(__dirname, 'packages/react-dom/src')}/`,
       'shared/': `${path.resolve(__dirname, 'packages/react/src')}/`,
+      'react-reconciler/': `${path.resolve(__dirname, 'packages/react-reconciler/src')}/`,
     },
   },
 })

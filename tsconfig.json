@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
+
     "target": "es2017",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -15,6 +16,7 @@
       "react/*": ["packages/react/src/*"],
       "react-dom/*": ["packages/react-dom/src/*"],
       "shared/*": ["packages/shared/src/*"],
+      "react-reconciler/*": ["packages/react-reconciler/src/*"],
     },
   }
 }
