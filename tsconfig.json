@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "esnext",
+    "lib": ["esnext", "DOM"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+    "react/*": ["packages/react/*"],
+    "react-dom/*": ["packages/react-dom/*"],
+    "shared/*": ["packages/shared/*"],
+    "react-reconciler/*": ["packages/react-reconciler/*"],
+    }
+  },
+  "include": [
+    "packages/*"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}
