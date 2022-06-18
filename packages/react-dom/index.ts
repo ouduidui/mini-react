@@ -1,3 +1,0 @@
-export {
-  createRoot,
-} from './ReactDOM'
