@@ -13,10 +13,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
      "paths": {
-      "react/*": ["packages/react/src/*"],
-      "react-dom/*": ["packages/react-dom/src/*"],
-      "shared/*": ["packages/shared/src/*"],
-      "react-reconciler/*": ["packages/react-reconciler/src/*"],
+      "react/*": ["packages/react/*"],
+      "react-dom/*": ["packages/react-dom/*"],
+      "shared/*": ["packages/shared/*"],
+      "react-reconciler/*": ["packages/react-reconciler/*"],
     },
   }
 }
