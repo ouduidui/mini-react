@@ -11,4 +11,7 @@ export default defineConfig({
       'react-reconciler/': `${path.resolve(__dirname, 'packages/react-reconciler')}/`,
     },
   },
+  test: {
+    environment: 'jsdom'
+  }
 })
