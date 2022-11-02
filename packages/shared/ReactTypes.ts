@@ -1,3 +1,5 @@
-export type RefObject = {
-  current: any,
-};
+export interface RefObject {
+  current: any
+}
+
+export type ReactNodeList = any

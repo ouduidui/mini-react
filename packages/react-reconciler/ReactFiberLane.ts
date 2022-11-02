@@ -1,9 +1,27 @@
+export const TotalLanes = 31
+
 export type Lanes = number
-
 export type Lane = number
+export type LaneMap<T> = Array<T>
 
-export const NoLanes = 0b0000000000000000000000000000000
-export const NoLane = 0b0000000000000000000000000000000
+export const NoLanes: Lanes = 0b0000000000000000000000000000000
+export const NoLane: Lane = 0b0000000000000000000000000000000
+
+export const SyncLane: Lane = 0b0000000000000000000000000000001
+export const InputContinuousLane: Lanes = 0b0000000000000000000000000000100
+export const DefaultLane: Lanes = 0b0000000000000000000000000010000
+
+export const IdleLane: Lanes = 0b0100000000000000000000000000000
+
+export const NoTimestamp = -1
+
+export function createLaneMap<T>(initial: T): LaneMap<T> {
+  const laneMap: LaneMap<T> = []
+  for (let i = 0; i < TotalLanes; i++)
+    laneMap.push(initial)
+
+  return laneMap
+}
 
 export function includesSomeLane(a: Lanes |Lane, b: Lanes | Lane) {
   return (a & b) !== NoLanes

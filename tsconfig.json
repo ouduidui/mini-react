@@ -28,6 +28,9 @@
       "react-reconciler/*": [
         "packages/react-reconciler/*"
       ],
+      "scheduler/*": [
+        "packages/scheduler/*"
+      ],
     },
   }
 }

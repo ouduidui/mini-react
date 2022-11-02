@@ -43,7 +43,6 @@ export function createUpdate(eventTime: number, lane: Lane): Update<unknown> {
 export function enqueueUpdate<State>(
   fiber: Fiber,
   update: Update<State>,
-  lane: Lane,
 ) {
   const updateQueue = fiber.updateQueue
 
