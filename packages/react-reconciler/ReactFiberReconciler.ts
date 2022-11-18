@@ -2,7 +2,7 @@ import type { Container } from 'react-dom/client/ReactDOMHostConfig'
 import type { ReactNodeList } from 'shared/ReactTypes'
 import { createUpdate, enqueueUpdate } from './ReactFiberClassUpdate'
 import { createFiberRoot } from './ReactFiberRoot'
-import { requestEventTime, requestUpdateLane } from './ReactFiberWorkLoop'
+import { requestEventTime, requestUpdateLane, scheduleUpdateOnFiber } from './ReactFiberWorkLoop'
 import type { FiberRoot } from './ReactInternalTypes'
 import type { RootTag } from './ReactRootTags'
 
@@ -24,4 +24,7 @@ export function updateContainer(
   const update = createUpdate(eventTime, lane)
   update.payload = { element }
   enqueueUpdate(current, update)
+
+  // 调度该filter节点上的更新
+  scheduleUpdateOnFiber(current, lane, eventTime)
 }

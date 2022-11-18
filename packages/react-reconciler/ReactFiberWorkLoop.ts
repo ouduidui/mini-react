@@ -66,3 +66,13 @@ export function requestUpdateLane(fiber: Fiber) {
   const eventLane: Lane = getCurrentEventPriority()
   return eventLane
 }
+
+/**
+ * 调度该fiber节点上的更新
+ * @param fiber
+ * @param lane
+ * @param eventTime
+ */
+export function scheduleUpdateOnFiber(fiber: Fiber, lane: Lane, eventTime: number): FiberRoot | null {
+
+}
