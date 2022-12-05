@@ -7,6 +7,7 @@
   "author": "Dewey Ou <oushihao97@gmail.com>",
   "type": "module",
   "scripts": {
+    "dev": "node ./scripts/dev",
     "test": "vitest"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "eslint": "^8.15.0",
     "happy-dom": "^5.3.1",
     "jsdom": "^19.0.0",
+    "tsup": "^6.5.0",
     "typescript": "^4.6.4",
     "vitest": "^0.11.0"
   }
