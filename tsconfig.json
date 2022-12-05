@@ -15,22 +15,5 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "jsx": "react",
-    "paths": {
-      "react/*": [
-        "packages/react/*"
-      ],
-      "react-dom/*": [
-        "packages/react-dom/*"
-      ],
-      "shared/*": [
-        "packages/shared/*"
-      ],
-      "react-reconciler/*": [
-        "packages/react-reconciler/*"
-      ],
-      "scheduler/*": [
-        "packages/scheduler/*"
-      ],
-    },
   }
 }
