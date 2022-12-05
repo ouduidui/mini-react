@@ -1,5 +1,5 @@
-import type { ReactElement } from 'shared/dist'
-import { REACT_ELEMENT_TYPE } from 'shared/src/ReactSymbols'
+import type { ReactElement } from 'shared/index'
+import { REACT_ELEMENT_TYPE } from 'shared/index'
 import type { FiberNode } from './ReactFiber'
 import { createFiberFromElement } from './ReactFiber'
 import { Placement } from './ReactFiberFlags'

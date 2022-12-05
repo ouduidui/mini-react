@@ -1,5 +1,5 @@
 
-import type { ReactElement } from 'shared/dist'
+import type { ReactElement } from 'shared/index'
 import type { Key, Props } from 'shared/index'
 import type { UpdateQueue } from './ReactFiberClassUpdateQueue'
 import type { Flags } from './ReactFiberFlags'

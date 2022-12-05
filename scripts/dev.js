@@ -1,15 +1,17 @@
-import fs from 'fs'
 import { build } from 'tsup'
 
-const packages = fs.readdirSync('packages')
-packages.forEach((pkg) => {
-  build({
-    entry: [`packages/${pkg}/index.ts`],
-    outDir: `./packages/${pkg}/dist`,
-    sourcemap: true,
-    watch: [`packages/${pkg}/index.ts`, `packages/${pkg}/src/**`],
-    dts: true,
-    format: ['esm'],
-    clean: true,
+(async() => {
+  ['react-reconciler', 'react-noop-renderer', 'react-dom', 'react'].forEach(async(pkg) => {
+    await build({
+      entry: [`packages/${pkg}/index.ts`],
+      external: ['packages/shared/index.ts'],
+      outDir: `./packages/${pkg}/dist`,
+      sourcemap: true,
+      watch: [`packages/${pkg}/index.ts`, `packages/${pkg}/src/**`],
+      minify: true,
+      dts: true,
+      format: ['esm'],
+      clean: true,
+    })
   })
-})
+})()

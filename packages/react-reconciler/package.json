@@ -1,7 +1,4 @@
 {
   "name": "react-reconciler",
-  "module": "index.ts",
-  "dependencies": {
-    "shared": "workspace:*"
-  }
+  "module": "index"
 }

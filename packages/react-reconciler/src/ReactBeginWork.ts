@@ -1,4 +1,4 @@
-import type { ReactElement } from 'shared/dist'
+import type { ReactElement } from 'shared/index'
 import { mountChildFibers, reconcileChildFibers } from './ReactChildFiber'
 import type { FiberNode } from './ReactFiber'
 import { WorkTag } from './ReactWorkTags'

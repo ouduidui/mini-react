@@ -15,5 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "jsx": "react",
+    "paths": {
+      "shared/*": [
+        "packages/shared/*"
+      ],
+    },
   }
 }

@@ -1,4 +1,4 @@
-import type { ReactElement } from 'shared/dist'
+import type { ReactElement } from 'shared/index'
 import { FiberNode, FiberRootNode } from './ReactFiber'
 import { createUpdate, enqueueUpdate, initializeUpdateQueue } from './ReactFiberClassUpdateQueue'
 import type { Container } from './ReactFiberHostConfig'
