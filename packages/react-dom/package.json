@@ -1,4 +1,7 @@
 {
   "name": "react-dom",
-  "module": "index.ts"
+  "module": "index.ts",
+  "dependencies": {
+    "react-reconciler": "workspace:*"
+  }
 }
