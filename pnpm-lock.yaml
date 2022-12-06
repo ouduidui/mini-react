@@ -24,6 +24,27 @@ importers:
       typescript: 4.6.4
       vitest: 0.11.0_oxgfswnbct5mbestgmgbp4eigq
 
+  packages/react:
+    specifiers: {}
+
+  packages/react-dom:
+    specifiers:
+      react-reconciler: workspace:*
+    dependencies:
+      react-reconciler: link:../react-reconciler
+
+  packages/react-noop-renderer:
+    specifiers: {}
+
+  packages/react-reconciler:
+    specifiers: {}
+
+  packages/scheduler:
+    specifiers: {}
+
+  packages/shared:
+    specifiers: {}
+
 packages:
 
   /@babel/code-frame/7.16.7:
