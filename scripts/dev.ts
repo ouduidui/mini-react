@@ -6,8 +6,12 @@ import { execa } from 'execa'
 
 async function buildPackages() {
   ['react-reconciler', 'react-noop-renderer', 'react-dom', 'react'].forEach(async(pkg) => {
+    const entry = [`packages/${pkg}/index.ts`]
+    if (pkg === 'react')
+      entry.push(`packages/${pkg}/jsx-dev-runtime.ts`)
+
     await build({
-      entry: [`packages/${pkg}/index.ts`],
+      entry,
       external: ['packages/shared/index.ts'],
       outDir: `./packages/${pkg}/dist`,
       sourcemap: true,
