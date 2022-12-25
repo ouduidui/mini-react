@@ -1,8 +1,6 @@
 {
   "name": "mini-react",
-  "version": "1.0.0",
   "description": "",
-  "keywords": [],
   "license": "MIT",
   "author": "Dewey Ou <oushihao97@gmail.com>",
   "type": "module",
